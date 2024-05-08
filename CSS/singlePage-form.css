@@ -1,0 +1,102 @@
+/* ============================ Start Gloable Form rules =================== */
+:root{
+  --main-form-color:#140C40;
+  --sec-form-color:#301A22;
+  --border-input-color:#C9C9C9;
+}
+/* ============================ End Gloable Form rules =================== */
+
+
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-form-holder{
+  box-shadow: 0px 10px 30px 0px rgba(13,12,13,0.2);
+  background: #fff;
+  padding: 55px 60px 50px 50px;
+  min-width: 700px;
+}
+
+.single-from .heading h2{
+  color: var(--main-form-color);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+.single-from .heading p{
+  color: var(--sec-form-color);
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.single-from label{
+  display: block;
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: var(--main-form-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: left;
+}
+
+.single-from input:not(input[type=submit]){
+  border: 1px solid var(--border-input-color);
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  color: #000;
+}
+
+.register-footer{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  align-items: center;
+  padding-top: 35px;
+}
+.register-footer{
+  color: var(--main-form-color);
+}
+.register-footer a{
+  color: var(--main-color);
+}
+
+.remmberme input[type=checkbox]{
+  /* display: none; */
+  position: absolute;
+  border: none;
+}
+
+.remmberme input[type="checkbox"]+label::before{
+  content: "\2714";
+  border: 0.1em solid #e4e4e4;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 10px;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+.remmberme-input{
+  position: relative;
+}
+.remmberme input[type="checkbox"]:checked+label::before{
+  background-color: #FF2020;
+  border-color: #FF2020;
+  color: #fff;
+  line-height: 18px;
+}
